@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'lg-md': '992px',
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header bg-white shadow">
+        <nav class="container mx-auto px-6 py-3">
+            <!-- top header with search and icons -->
+            <div class="flex items-center justify-between">
+                <div class="logo-block max-w-[140px] md:w-1/6 sm:w-1/4 px-[15px]">
+                    <div class="logo">
+                        <a href="/"><img src="./assets/img/logo.svg" alt="UniRenter.ru - Сервис проката! "
+                                title="UniRenter.ru - Сервис проката! " data-src="" /></a>
+                    </div>
+                </div>
+                <div id="title-search_fixed" class="w-3/5">
+                    <form action="/catalog/" class="search relative">
+                        <div class="search-input-div w-full">
+                            <input class="search-input" id="title-search-input_fixed" type="text" name="q" value=""
+                                placeholder="Поиск" size="20" maxlength="50" autocomplete="off" />
+                        </div>
+                    </form>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="flex items-center relative">
+                        <span class="js-basket-block">
+                            <i class="svg inline svg-inline-wish big" aria-hidden="true"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="22.969" height="21"
+                                    viewBox="0 0 22.969 21">
+                                    <defs>
+                                        <style>
+                                            .whcls-1 {
+                                                fill: #222;
+                                                fill-rule: evenodd;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="whcls-1"
+                                        d="M21.028,10.68L11.721,20H11.339L2.081,10.79A6.19,6.19,0,0,1,6.178,0a6.118,6.118,0,0,1,5.383,3.259A6.081,6.081,0,0,1,23.032,6.147,6.142,6.142,0,0,1,21.028,10.68ZM19.861,9.172h0l-8.176,8.163H11.369L3.278,9.29l0.01-.009A4.276,4.276,0,0,1,6.277,1.986,4.2,4.2,0,0,1,9.632,3.676l0.012-.01,0.064,0.1c0.077,0.107.142,0.22,0.208,0.334l1.692,2.716,1.479-2.462a4.23,4.23,0,0,1,.39-0.65l0.036-.06L13.52,3.653a4.173,4.173,0,0,1,3.326-1.672A4.243,4.243,0,0,1,19.861,9.172ZM22,20h1v1H22V20Zm0,0h1v1H22V20Z"
+                                        transform="translate(-0.031)"></path>
+                                </svg>
+                            </i>
+                            <!-- если в корине что-то есть поставить text-[#B0A1FC] -->
+                            <span class="count">1</span>
+                        </span>
+                    </a>
+                    <a href="" class="self-center text-[#999]">Все платья</a>
+                    <a href="#" class="self-center text-[#999]">О нас</a>
+                </div>
+            </div>
+            <!-- bot header -->
+            <div class="header__variants hidden lg:flex justify-center">
+                <div class="cursor-pointer hover:text-[#B0A1FC] transition-colors">
+                    <a href="" class="pt-5 pb-5 px-5 relative"> Вечерние платья </a>
+                </div>
+                <div class="cursor-pointer hover:text-[#B0A1FC] transition-colors">
+                    <a href="" class="pt-5 pb-5 px-5 relative"> Коктейльные </a>
+                </div>
+                <div class="cursor-pointer hover:text-[#B0A1FC] transition-colors">
+                    <a href="" class="pt-5 pb-5 px-5 relative"> Бальные </a>
+                </div>
+                <div class="cursor-pointer hover:text-[#B0A1FC] transition-colors">
+                    <a href="" class="pt-5 pb-5 px-5 relative"> Свадебные </a>
+                </div>
+                <div class="cursor-pointer hover:text-[#B0A1FC] transition-colors">
+                    <a href="" class="pt-5 pb-5 px-5 relative"> Платья на выпускной </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
